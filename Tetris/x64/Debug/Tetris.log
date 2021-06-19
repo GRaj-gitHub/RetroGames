@@ -1,10 +1,10 @@
 ﻿  main.cpp
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(42,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(54,33): warning C4305: 'initializing': truncation from 'double' to 'float'
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(82,65): warning C4305: '=': truncation from 'double' to 'float'
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(150,40): warning C4305: '=': truncation from 'double' to 'float'
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(162,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(162,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(171,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\Tetris\main.cpp(171,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  Tetris.vcxproj -> D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\x64\Debug\Tetris.exe
+D:\GIt\RetroGames\Tetris\main.cpp(42,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+D:\GIt\RetroGames\Tetris\main.cpp(54,33): warning C4305: 'initializing': truncation from 'double' to 'float'
+D:\GIt\RetroGames\Tetris\main.cpp(82,65): warning C4305: '=': truncation from 'double' to 'float'
+D:\GIt\RetroGames\Tetris\main.cpp(150,40): warning C4305: '=': truncation from 'double' to 'float'
+D:\GIt\RetroGames\Tetris\main.cpp(162,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\GIt\RetroGames\Tetris\main.cpp(162,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\GIt\RetroGames\Tetris\main.cpp(171,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\GIt\RetroGames\Tetris\main.cpp(171,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Tetris.vcxproj -> D:\GIt\RetroGames\x64\Debug\Tetris.exe
