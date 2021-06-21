@@ -1,9 +1,4 @@
 ﻿  main.cpp
-D:\GIt\RetroGames\Chess\main.cpp(18,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
 D:\GIt\RetroGames\Chess\main.cpp(18,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [

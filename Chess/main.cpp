@@ -1,9 +1,10 @@
-#include <SFML/Graphics.hpp>
+
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(512, 512), "Chess");
-    sf::Texture boardTex;
+   sf::RenderWindow window(sf::VideoMode(512, 512), "Chess");
+   
+   /*sf::Texture boardTex;
     boardTex.loadFromFile("../Assets/Images/Chess/Board.png");
   
     sf::Sprite BgSprite;
@@ -15,14 +16,9 @@ int main()
     {
         pieceTex.loadFromFile("../Assets/Images/Chess/pieces.png", sf::IntRect(0, 0, 64 * (i + 1), 64 * (i + 1)));
         B_pieces[i].setTexture(pieceTex);
-        B_pieces[i].setPosition(sf::Vector2f(64 * (i + 1), 64 * (i + 1)));
-    }
-
-   
-   
-
+        B_pieces[i].setPosition(sf::Vector2f(64 * (i + 1), 64));
+    }*/
   
-   
 
     while (window.isOpen())
     {
