@@ -2,9 +2,27 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    sf::RenderWindow window(sf::VideoMode(512, 512), "Chess");
+    sf::Texture boardTex;
+    boardTex.loadFromFile("../Assets/Images/Chess/Board.png");
+  
+    sf::Sprite BgSprite;
+    BgSprite.setTexture(boardTex);
+   
+    sf::Texture pieceTex;
+    sf::Sprite B_pieces[6];
+    for (int i = 0; i < 6; ++i)
+    {
+        pieceTex.loadFromFile("../Assets/Images/Chess/pieces.png", sf::IntRect(0, 0, 64 * (i + 1), 64 * (i + 1)));
+        B_pieces[i].setTexture(pieceTex);
+        B_pieces[i].setPosition(sf::Vector2f(64 * (i + 1), 64 * (i + 1)));
+    }
+
+   
+   
+
+  
+   
 
     while (window.isOpen())
     {
@@ -16,7 +34,12 @@ int main()
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(BgSprite);
+        for (int i = 0; i < 6; i++)
+        {
+            window.draw(B_pieces[i]);
+        }
+       
         window.display();
     }
 

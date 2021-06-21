@@ -1,2 +1,12 @@
 ﻿  main.cpp
-  Chess.vcxproj -> D:\FrequetlyUsed\Desktop(Folders)\PractiseProjects\Projects_C++\RetroGames\x64\Debug\Chess.exe
+D:\GIt\RetroGames\Chess\main.cpp(18,63): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+D:\GIt\RetroGames\Chess\main.cpp(18,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Chess.vcxproj -> D:\GIt\RetroGames\x64\Debug\Chess.exe
