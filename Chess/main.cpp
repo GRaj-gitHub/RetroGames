@@ -1,44 +1,38 @@
-#include "GameObjects.h"
+#include "Game.h"
 
 int main()
 {
-   sf::RenderWindow window(sf::VideoMode(512, 512), "Chess");
+    //bg sprites and textures
+    sf::Texture Bg;
+    Bg.loadFromFile("../Assets/Images/Chess/Bg.png");
+    sf::Sprite BgSprite(Bg);
+
+    sf::Texture Board;
+    Board.loadFromFile("../Assets/Images/Chess/Board.png", sf::IntRect(0,0,800,800));
+    sf::Sprite BoardSprite(Board);
+
+    //main window
+    sf::RenderWindow window(sf::VideoMode(1100, 800), "Chess");
    
-   sf::Texture boardTex;
-    boardTex.loadFromFile("../Assets/Images/Chess/Board.png");
-  
-    sf::Sprite BgSprite;
-    BgSprite.setTexture(boardTex);
-   
-    sf::Texture pieceTex;
-    sf::Sprite B_pieces[6];
-   // for (int i = 0; i < 6; i++)
-  //  {
-        pieceTex.loadFromFile("../Assets/Images/Chess/pieces.png", sf::IntRect( 64 * 0 , 64 * 0, 64, 64));
-       
-        B_pieces[0].setTexture(pieceTex);
-        pieceTex.loadFromFile("../Assets/Images/Chess/pieces.png", sf::IntRect(64 * 0, 64 * 0, 64, 64));
-        B_pieces[1].setTexture(pieceTex);
-        B_pieces[1].setPosition(sf::Vector2f(64 , 0));
-    //}
-  
+    //running game
+    Game* newGame = new Game();
 
     while (window.isOpen())
     {
-        sf::Event event;
+        sf::Event event = newGame->GetCurrentEvent();
         while (window.pollEvent(event))
         {
+            newGame->Run();
+            
             if (event.type == sf::Event::Closed)
                 window.close();
-        }
-
+            
+        }   
         window.clear(sf::Color::Black);
+       // newGame->init();
+       
         window.draw(BgSprite);
-       for (int i = 0; i < 2; i++)
-       {
-            window.draw(B_pieces[i]);
-       }
-        //window.draw(B_pieces[1]);
+        window.draw(BoardSprite);
         window.display();
     }
 
