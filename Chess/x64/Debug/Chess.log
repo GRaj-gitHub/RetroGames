@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  Game.cpp
+  GameObjects.cpp
+  main.cpp
+  Generating Code...
   Chess.vcxproj -> D:\GIt\RetroGames\x64\Debug\Chess.exe

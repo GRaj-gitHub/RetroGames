@@ -2,15 +2,7 @@
 
 int main()
 {
-    //bg sprites and textures
-    sf::Texture Bg;
-    Bg.loadFromFile("../Assets/Images/Chess/Bg.png");
-    sf::Sprite BgSprite(Bg);
-
-    sf::Texture Board;
-    Board.loadFromFile("../Assets/Images/Chess/Board.png", sf::IntRect(0,0,800,800));
-    sf::Sprite BoardSprite(Board);
-
+  
     //main window
     sf::RenderWindow window(sf::VideoMode(1100, 800), "Chess");
    
@@ -19,22 +11,20 @@ int main()
 
     while (window.isOpen())
     {
-        sf::Event event = newGame->GetCurrentEvent();
+        newGame->Init(window);
+        sf::Event event;
         while (window.pollEvent(event))
         {
-            newGame->Run();
-            
             if (event.type == sf::Event::Closed)
+            {
                 window.close();
-            
-        }   
-        window.clear(sf::Color::Black);
-       // newGame->init();
+            }
+            newGame->Run();
+        }
        
-        window.draw(BgSprite);
-        window.draw(BoardSprite);
-        window.display();
-    }
+       
 
+    }
+    delete newGame;
     return 0;
 }
