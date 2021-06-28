@@ -36,7 +36,10 @@ public:
 
 	sf::Sprite GetSprite() { return pawnSprite; }
 
-	void MakeSprite() { pawnSprite.setTexture(pieceTex); }
+	void MakeSprite() 
+	{ 
+		pawnSprite.setTexture(pieceTex);
+	}
 
 	const char* GetName() { return objName; }
 

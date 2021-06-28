@@ -1,5 +1,6 @@
 #pragma once
 #include<iostream>
+#include<vector>
 #include "GameObjects.h"
 
 class Game
@@ -21,11 +22,13 @@ protected:
 	sf::Sprite BgSprite;
 	sf::Sprite BoardSprite;
 
+	GameObject* blackPieces[16];
+	GameObject* whitePieces[16];
+
 	sf::Texture pawn;
 
 	bool gameOver;
 	
 	sf::Event e;
 
-	Pawn* p1;
 };

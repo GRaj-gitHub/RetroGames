@@ -1,5 +1,3 @@
 ﻿  Game.cpp
-  GameObjects.cpp
-  main.cpp
-  Generating Code...
-  Chess.vcxproj -> D:\GIt\RetroGames\x64\Debug\Chess.exe
+D:\GIt\RetroGames\Chess\Game.cpp(22,54): error C2661: 'sf::Transformable::setPosition': no overloaded function takes 4 arguments
+D:\GIt\RetroGames\Chess\Game.cpp(34,9): error C2065: 'p1': undeclared identifier

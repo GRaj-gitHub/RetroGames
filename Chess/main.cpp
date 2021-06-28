@@ -11,7 +11,7 @@ int main()
 
     while (window.isOpen())
     {
-        newGame->Init(window);
+      
         sf::Event event;
         while (window.pollEvent(event))
         {
@@ -19,6 +19,7 @@ int main()
             {
                 window.close();
             }
+            newGame->Init(window);
             newGame->Run();
         }
        
