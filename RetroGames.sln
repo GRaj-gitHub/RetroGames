@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tetris", "Tetris\Tetris.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chess", "Chess\Chess.vcxproj", "{327A43AA-EE0A-4F55-A7D4-BD6E75A71435}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Jump", "Jump\Jump.vcxproj", "{04BF4828-763D-46FA-B702-7C0E732CA680}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{327A43AA-EE0A-4F55-A7D4-BD6E75A71435}.Release|x64.Build.0 = Release|x64
 		{327A43AA-EE0A-4F55-A7D4-BD6E75A71435}.Release|x86.ActiveCfg = Release|Win32
 		{327A43AA-EE0A-4F55-A7D4-BD6E75A71435}.Release|x86.Build.0 = Release|Win32
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Debug|x64.ActiveCfg = Debug|x64
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Debug|x64.Build.0 = Debug|x64
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Debug|x86.ActiveCfg = Debug|Win32
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Debug|x86.Build.0 = Debug|Win32
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Release|x64.ActiveCfg = Release|x64
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Release|x64.Build.0 = Release|x64
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Release|x86.ActiveCfg = Release|Win32
+		{04BF4828-763D-46FA-B702-7C0E732CA680}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
